@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "dgSpecHash": "ytJEYe/CAVmDBANHcUKvQNHngRiOnww/vf2+6/D0VN6R7zLflVk/zO4QZuiPKbsSsTWOmwWLU4ExNyJmAfUHQg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\egome\\source\\repos\\PokeDex\\PokeDex\\PokeDex.iOS\\PokeDex.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\egome\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\egome\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\egome\\.nuget\\packages\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.6.0 to 1.5.3.2. Reference the package directly from the project to select a different version. \r\n PokeDex.iOS -> PokeDex -> Xamarin.Essentials (>= 1.6.0) \r\n PokeDex.iOS -> Xamarin.Essentials (>= 1.5.3.2)",
+      "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Forms from 4.8.0.1821 to 4.8.0.1451. Reference the package directly from the project to select a different version. \r\n PokeDex.iOS -> PokeDex -> Xamarin.Forms (>= 4.8.0.1821) \r\n PokeDex.iOS -> Xamarin.Forms (>= 4.8.0.1451)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    }
+  ]
+}
