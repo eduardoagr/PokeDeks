@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v9.0": {
+      "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        }
+      },
       "Newtonsoft.Json/12.0.3": {
         "type": "package",
         "compile": {
@@ -9,6 +18,57 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/MonoAndroid10/_._": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Text.Encodings.Web/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/System.Text.Encodings.Web.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/System.Text.Encodings.Web.dll": {}
+        }
+      },
+      "System.Text.Json/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
+          "System.Buffers": "4.5.1",
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
+          "System.Text.Encodings.Web": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Json.dll": {}
         }
       },
       "Xamarin.Android.Arch.Core.Common/1.1.1.3": {
@@ -752,9 +812,10 @@
           "build/monoandroid90/Xamarin.Android.Support.ViewPager.targets": {}
         }
       },
-      "Xamarin.Essentials/1.5.3.2": {
+      "Xamarin.Essentials/1.6.0": {
         "type": "package",
         "dependencies": {
+          "System.Numerics.Vectors": "4.5.0",
           "Xamarin.Android.Support.Compat": "28.0.0.3",
           "Xamarin.Android.Support.CustomTabs": "28.0.0.3"
         },
@@ -765,7 +826,7 @@
           "lib/monoandroid90/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.8.0.1451": {
+      "Xamarin.Forms/4.8.0.1821": {
         "type": "package",
         "dependencies": {
           "Xamarin.Android.Support.CustomTabs": "28.0.0.3",
@@ -793,13 +854,31 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Visual.Material/4.8.0.1821": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Design": "28.0.0.3",
+          "Xamarin.Android.Support.v7.AppCompat": "28.0.0.3"
+        },
+        "compile": {
+          "lib/MonoAndroid90/Xamarin.Forms.Material.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid90/Xamarin.Forms.Material.dll": {}
+        },
+        "build": {
+          "buildTransitive/MonoAndroid10/Xamarin.Forms.Visual.Material.targets": {}
+        }
+      },
       "PokeDex/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "12.0.3",
+          "System.Text.Json": "5.0.0",
           "Xamarin.Essentials": "1.6.0",
-          "Xamarin.Forms": "4.8.0.1821"
+          "Xamarin.Forms": "4.8.0.1821",
+          "Xamarin.Forms.Visual.Material": "4.8.0.1821"
         },
         "compile": {
           "bin/placeholder/PokeDex.dll": {}
@@ -811,6 +890,28 @@
     }
   },
   "libraries": {
+    "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+      "sha512": "W8DPQjkMScOMTtJbPwmPyj9c3zYSFGawDW3jwlBOOsnY+EzZFLgNQ/UMkK35JmkNOVPdCyPr2Tw7Vv9N+KA3ZQ==",
+      "type": "package",
+      "path": "microsoft.bcl.asyncinterfaces/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
+        "microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
+        "microsoft.bcl.asyncinterfaces.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "Newtonsoft.Json/12.0.3": {
       "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
       "type": "package",
@@ -840,6 +941,164 @@
         "newtonsoft.json.12.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
+      ]
+    },
+    "System.Buffers/4.5.1": {
+      "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
+      "type": "package",
+      "path": "system.buffers/4.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Buffers.dll",
+        "lib/net461/System.Buffers.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Buffers.dll",
+        "lib/netstandard1.1/System.Buffers.xml",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net45/System.Buffers.dll",
+        "ref/net45/System.Buffers.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard1.1/System.Buffers.xml",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.xml",
+        "ref/uap10.0.16299/_._",
+        "system.buffers.4.5.1.nupkg.sha512",
+        "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "type": "package",
+      "path": "system.numerics.vectors/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Numerics.Vectors.dll",
+        "lib/net46/System.Numerics.Vectors.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Numerics.Vectors.dll",
+        "lib/netstandard1.0/System.Numerics.Vectors.xml",
+        "lib/netstandard2.0/System.Numerics.Vectors.dll",
+        "lib/netstandard2.0/System.Numerics.Vectors.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/System.Numerics.Vectors.dll",
+        "ref/net45/System.Numerics.Vectors.xml",
+        "ref/net46/System.Numerics.Vectors.dll",
+        "ref/net46/System.Numerics.Vectors.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/System.Numerics.Vectors.dll",
+        "ref/netstandard1.0/System.Numerics.Vectors.xml",
+        "ref/netstandard2.0/System.Numerics.Vectors.dll",
+        "ref/netstandard2.0/System.Numerics.Vectors.xml",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.numerics.vectors.4.5.0.nupkg.sha512",
+        "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/5.0.0": {
+      "sha512": "ZD9TMpsmYJLrxbbmdvhwt9YEgG5WntEnZ/d1eH8JBX9LBp+Ju8BSBhUGbZMNVHHomWo2KVImJhTDl2hIgw/6MA==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net45/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Text.Encodings.Web/5.0.0": {
+      "sha512": "EEslUvHKll1ftizbn20mX3Ix/l4Ygk/bdJ2LY6/X6FlGaP0RIhKMo9nS6JIGnKKT6KBP2PGj6JC3B9/ZF6ErqQ==",
+      "type": "package",
+      "path": "system.text.encodings.web/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Text.Encodings.Web.dll",
+        "lib/net461/System.Text.Encodings.Web.xml",
+        "lib/netcoreapp3.0/System.Text.Encodings.Web.dll",
+        "lib/netcoreapp3.0/System.Text.Encodings.Web.xml",
+        "lib/netstandard1.0/System.Text.Encodings.Web.dll",
+        "lib/netstandard1.0/System.Text.Encodings.Web.xml",
+        "lib/netstandard2.0/System.Text.Encodings.Web.dll",
+        "lib/netstandard2.0/System.Text.Encodings.Web.xml",
+        "lib/netstandard2.1/System.Text.Encodings.Web.dll",
+        "lib/netstandard2.1/System.Text.Encodings.Web.xml",
+        "system.text.encodings.web.5.0.0.nupkg.sha512",
+        "system.text.encodings.web.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Text.Json/5.0.0": {
+      "sha512": "+luxMQNZ2WqeffBU7Ml6njIvxc8169NW2oU+ygNudXQGZiarjE7DOtN7bILiQjTZjkmwwRZGTtLzmdrSI/Ustw==",
+      "type": "package",
+      "path": "system.text.json/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Text.Json.dll",
+        "lib/net461/System.Text.Json.xml",
+        "lib/netcoreapp3.0/System.Text.Json.dll",
+        "lib/netcoreapp3.0/System.Text.Json.xml",
+        "lib/netstandard2.0/System.Text.Json.dll",
+        "lib/netstandard2.0/System.Text.Json.xml",
+        "system.text.json.5.0.0.nupkg.sha512",
+        "system.text.json.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "Xamarin.Android.Arch.Core.Common/1.1.1.3": {
@@ -1596,10 +1855,10 @@
         "xamarin.android.support.viewpager.nuspec"
       ]
     },
-    "Xamarin.Essentials/1.5.3.2": {
-      "sha512": "BSLgDJUOPFRwTpQaftM+s4qb/MsTjrqXulEYDOcK6KF3i0Orf75zo3RwRfqnQ8WfpoEFxW/v0jgcPWCvOMgHxg==",
+    "Xamarin.Essentials/1.6.0": {
+      "sha512": "geJYnjTyPv2npClIkBxLXk9cOV9CPwj/oayA8I4+6NpZc/dIiYxax36m25SW8TrCMR/rvyY44fZBjWBvj7BCQQ==",
       "type": "package",
-      "path": "xamarin.essentials/1.5.3.2",
+      "path": "xamarin.essentials/1.6.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1633,6 +1892,9 @@
         "lib/xamarinios10/Xamarin.Essentials.dll",
         "lib/xamarinios10/Xamarin.Essentials.pdb",
         "lib/xamarinios10/Xamarin.Essentials.xml",
+        "lib/xamarinmac20/Xamarin.Essentials.dll",
+        "lib/xamarinmac20/Xamarin.Essentials.pdb",
+        "lib/xamarinmac20/Xamarin.Essentials.xml",
         "lib/xamarintvos10/Xamarin.Essentials.dll",
         "lib/xamarintvos10/Xamarin.Essentials.pdb",
         "lib/xamarintvos10/Xamarin.Essentials.xml",
@@ -1640,14 +1902,14 @@
         "lib/xamarinwatchos10/Xamarin.Essentials.pdb",
         "lib/xamarinwatchos10/Xamarin.Essentials.xml",
         "readme.txt",
-        "xamarin.essentials.1.5.3.2.nupkg.sha512",
+        "xamarin.essentials.1.6.0.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/4.8.0.1451": {
-      "sha512": "3RUzBpcaBxOjufLLqJnuZRGLhzAbVyfe/Pyp0AFY/H1MkCHYxXIRzgB8h6yC9NTs39NLK2SgGiaMbvC4TJ/zFA==",
+    "Xamarin.Forms/4.8.0.1821": {
+      "sha512": "3e/5DwE/bExRLtM1tA3iI9E6TCnIF+e9+lINgwLOUs0g49ebFmQiNDXBKb06jmqqV4VyNaUGZqs0bI13ruv8bQ==",
       "type": "package",
-      "path": "xamarin.forms/4.8.0.1451",
+      "path": "xamarin.forms/4.8.0.1821",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1956,8 +2218,32 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.8.0.1451.nupkg.sha512",
+        "xamarin.forms.4.8.0.1821.nupkg.sha512",
         "xamarin.forms.nuspec"
+      ]
+    },
+    "Xamarin.Forms.Visual.Material/4.8.0.1821": {
+      "sha512": "smb01yudhagQ+9zDyR+ufFYnbVUIcbKNkLMAnjD02CTB2fZVCXHKHQO3jTBpE/XybpJhzYDyLqmWH+IDFfWjeQ==",
+      "type": "package",
+      "path": "xamarin.forms.visual.material/4.8.0.1821",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Assets/xamarin_128x128.png",
+        "build/MonoAndroid10/Xamarin.Forms.Visual.Material.targets",
+        "buildTransitive/MonoAndroid10/Xamarin.Forms.Visual.Material.targets",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Material.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Material.pdb",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoAndroid90/Xamarin.Forms.Material.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Material.pdb",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Material.pdb",
+        "lib/netstandard1.0/_._",
+        "lib/tizen40/Xamarin.Forms.Material.dll",
+        "lib/tizen40/Xamarin.Forms.Material.pdb",
+        "xamarin.forms.visual.material.4.8.0.1821.nupkg.sha512",
+        "xamarin.forms.visual.material.nuspec"
       ]
     },
     "PokeDex/1.0.0": {
@@ -1969,8 +2255,9 @@
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v9.0": [
       "PokeDex >= 1.0.0",
-      "Xamarin.Essentials >= 1.5.3.2",
-      "Xamarin.Forms >= 4.8.0.1451"
+      "Xamarin.Essentials >= 1.6.0",
+      "Xamarin.Forms >= 4.8.0.1821",
+      "Xamarin.Forms.Visual.Material >= 4.8.0.1821"
     ]
   },
   "packageFolders": {
@@ -1980,11 +2267,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\egome\\source\\repos\\PokeDex\\PokeDex\\PokeDex.Android\\PokeDex.Android.csproj",
+      "projectUniqueName": "C:\\Users\\egome\\Documents\\GitRepos\\PokeDex\\PokeDex\\PokeDex.Android\\PokeDex.Android.csproj",
       "projectName": "PokeDex.Android",
-      "projectPath": "C:\\Users\\egome\\source\\repos\\PokeDex\\PokeDex\\PokeDex.Android\\PokeDex.Android.csproj",
+      "projectPath": "C:\\Users\\egome\\Documents\\GitRepos\\PokeDex\\PokeDex\\PokeDex.Android\\PokeDex.Android.csproj",
       "packagesPath": "C:\\Users\\egome\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\egome\\source\\repos\\PokeDex\\PokeDex\\PokeDex.Android\\obj\\",
+      "outputPath": "C:\\Users\\egome\\Documents\\GitRepos\\PokeDex\\PokeDex\\PokeDex.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2005,8 +2292,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\egome\\source\\repos\\PokeDex\\PokeDex\\PokeDex\\PokeDex.csproj": {
-              "projectPath": "C:\\Users\\egome\\source\\repos\\PokeDex\\PokeDex\\PokeDex\\PokeDex.csproj"
+            "C:\\Users\\egome\\Documents\\GitRepos\\PokeDex\\PokeDex\\PokeDex\\PokeDex.csproj": {
+              "projectPath": "C:\\Users\\egome\\Documents\\GitRepos\\PokeDex\\PokeDex\\PokeDex\\PokeDex.csproj"
             }
           }
         }
@@ -2017,36 +2304,18 @@
         "dependencies": {
           "Xamarin.Essentials": {
             "target": "Package",
-            "version": "[1.5.3.2, )"
+            "version": "[1.6.0, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.8.0.1451, )"
+            "version": "[4.8.0.1821, )"
+          },
+          "Xamarin.Forms.Visual.Material": {
+            "target": "Package",
+            "version": "[4.8.0.1821, )"
           }
         }
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Essentials from 1.6.0 to 1.5.3.2. Reference the package directly from the project to select a different version. \r\n PokeDex.Android -> PokeDex -> Xamarin.Essentials (>= 1.6.0) \r\n PokeDex.Android -> Xamarin.Essentials (>= 1.5.3.2)",
-      "libraryId": "Xamarin.Essentials",
-      "targetGraphs": [
-        "MonoAndroid,Version=v9.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Forms from 4.8.0.1821 to 4.8.0.1451. Reference the package directly from the project to select a different version. \r\n PokeDex.Android -> PokeDex -> Xamarin.Forms (>= 4.8.0.1821) \r\n PokeDex.Android -> Xamarin.Forms (>= 4.8.0.1451)",
-      "libraryId": "Xamarin.Forms",
-      "targetGraphs": [
-        "MonoAndroid,Version=v9.0"
-      ]
-    }
-  ]
+  }
 }

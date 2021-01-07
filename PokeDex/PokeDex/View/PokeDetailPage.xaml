@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PokeDex.View.PokeDetailPage"
+             xmlns:vm="clr-namespace:PokeDex.ViewModel"
+             Visual="Material">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="20"
+                         HorizontalOptions="Center">
+                <Label Text="{x:Binding PokeName}"
+                       FontSize="Large"
+                       FontAttributes="Bold" />
+                <Image Source="{x:Binding PokeImage}"
+                       Grid.Row="1" />
+                <CollectionView  ItemsSource="{x:Binding PokeAbilities}"
+                                 Grid.Row="2"
+                                 HeightRequest="200">
+                    <CollectionView.Header>
+                        <Label Text="Abilities"
+                               FontAttributes="Bold"
+                               TextColor="White"
+                               BackgroundColor="#2B4066" />
+                    </CollectionView.Header>
+                </CollectionView>
+                <Label Text="{x:Binding PokeDesc}"
+                       HorizontalTextAlignment="Center"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       TextColor="DarkBlue" />
+
+                <Button Text="Speak"
+                        Command="{x:Binding speakCommad}"
+                        HorizontalOptions="Center"
+                        Margin="10"/>
+            </StackLayout>
+        </ScrollView>
+          </ContentPage.Content>
+</ContentPage>

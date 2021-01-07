@@ -1,10 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "kyWNoRbNqQW5g4HoV0l15a+/zhhChjmTryjP2KLlLkZgubbaRiCkh+PpLGgztXvy9PGBqIkzqhym7x5IdgrlnA==",
+  "dgSpecHash": "5CbXscKKH7l6GGxeH02jvh/+CyHQlMb+AMkTyj5AEgj11tKNzY7TwTddeI44Lvd2mWRPPvz85DrcsSPSdpq81A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\egome\\source\\repos\\PokeDex\\PokeDex\\PokeDex.Android\\PokeDex.Android.csproj",
+  "projectFilePath": "C:\\Users\\egome\\Documents\\GitRepos\\PokeDex\\PokeDex\\PokeDex.Android\\PokeDex.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\egome\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\egome\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\egome\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\egome\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\egome\\.nuget\\packages\\system.text.encodings.web\\5.0.0\\system.text.encodings.web.5.0.0.nupkg.sha512",
+    "C:\\Users\\egome\\.nuget\\packages\\system.text.json\\5.0.0\\system.text.json.5.0.0.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\xamarin.android.arch.core.runtime\\1.1.1.3\\xamarin.android.arch.core.runtime.1.1.1.3.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\xamarin.android.arch.lifecycle.common\\1.1.1.3\\xamarin.android.arch.lifecycle.common.1.1.1.3.nupkg.sha512",
@@ -42,29 +48,9 @@
     "C:\\Users\\egome\\.nuget\\packages\\xamarin.android.support.vector.drawable\\28.0.0.3\\xamarin.android.support.vector.drawable.28.0.0.3.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\xamarin.android.support.versionedparcelable\\28.0.0.3\\xamarin.android.support.versionedparcelable.28.0.0.3.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\xamarin.android.support.viewpager\\28.0.0.3\\xamarin.android.support.viewpager.28.0.0.3.nupkg.sha512",
-    "C:\\Users\\egome\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\egome\\.nuget\\packages\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+    "C:\\Users\\egome\\.nuget\\packages\\xamarin.essentials\\1.6.0\\xamarin.essentials.1.6.0.nupkg.sha512",
+    "C:\\Users\\egome\\.nuget\\packages\\xamarin.forms\\4.8.0.1821\\xamarin.forms.4.8.0.1821.nupkg.sha512",
+    "C:\\Users\\egome\\.nuget\\packages\\xamarin.forms.visual.material\\4.8.0.1821\\xamarin.forms.visual.material.4.8.0.1821.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Essentials from 1.6.0 to 1.5.3.2. Reference the package directly from the project to select a different version. \r\n PokeDex.Android -> PokeDex -> Xamarin.Essentials (>= 1.6.0) \r\n PokeDex.Android -> Xamarin.Essentials (>= 1.5.3.2)",
-      "libraryId": "Xamarin.Essentials",
-      "targetGraphs": [
-        "MonoAndroid,Version=v9.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Forms from 4.8.0.1821 to 4.8.0.1451. Reference the package directly from the project to select a different version. \r\n PokeDex.Android -> PokeDex -> Xamarin.Forms (>= 4.8.0.1821) \r\n PokeDex.Android -> Xamarin.Forms (>= 4.8.0.1451)",
-      "libraryId": "Xamarin.Forms",
-      "targetGraphs": [
-        "MonoAndroid,Version=v9.0"
-      ]
-    }
-  ]
+  "logs": []
 }

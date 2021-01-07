@@ -1,15 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "ENOBN+nyE4pAnI81WWOx6yozLRhn78MQRxzBQDJ4HhrILbIRMPqOEfknnlN4Tc9iZKSCy+xYtEWN7TORVqmdqw==",
+  "dgSpecHash": "TfTSn23IoW1hSDQTegvLqF8sTAOMfRZMjUWP2n7ekprIrcgXte/nP23DcjZE81Zq0a+mGeGdxh6w4XvYmNES8w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\egome\\source\\repos\\PokeDex\\PokeDex\\PokeDex\\PokeDex.csproj",
+  "projectFilePath": "C:\\Users\\egome\\Documents\\GitRepos\\PokeDex\\PokeDex\\PokeDex\\PokeDex.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\egome\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\egome\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\egome\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\egome\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\egome\\.nuget\\packages\\system.text.encodings.web\\5.0.0\\system.text.encodings.web.5.0.0.nupkg.sha512",
+    "C:\\Users\\egome\\.nuget\\packages\\system.text.json\\5.0.0\\system.text.json.5.0.0.nupkg.sha512",
+    "C:\\Users\\egome\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\xamarin.essentials\\1.6.0\\xamarin.essentials.1.6.0.nupkg.sha512",
-    "C:\\Users\\egome\\.nuget\\packages\\xamarin.forms\\4.8.0.1821\\xamarin.forms.4.8.0.1821.nupkg.sha512"
+    "C:\\Users\\egome\\.nuget\\packages\\xamarin.forms\\4.8.0.1821\\xamarin.forms.4.8.0.1821.nupkg.sha512",
+    "C:\\Users\\egome\\.nuget\\packages\\xamarin.forms.visual.material\\4.8.0.1821\\xamarin.forms.visual.material.4.8.0.1821.nupkg.sha512"
   ],
   "logs": []
 }

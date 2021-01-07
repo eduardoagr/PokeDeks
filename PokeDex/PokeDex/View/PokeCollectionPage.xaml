@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PokeDex.View.PokeCollectionPage"
+             xmlns:vm="clr-namespace:PokeDex.ViewModel">
+
+    <ContentPage.BindingContext>
+        <vm:PokeCollectionVM />
+    </ContentPage.BindingContext>
+
+    <CollectionView ItemsSource="{x:Binding pokeItems}"
+                    SelectionMode="Single"
+                    SelectedItem="{x:Binding SelectedItem, Mode=TwoWay}"
+                    SelectionChangedCommand="{x:Binding SelectedItemCommand}">
+        <CollectionView.EmptyView>
+            <Grid>
+                <StackLayout VerticalOptions="Center">
+                    <Image Source="Load" />
+                    <Label Text="Getting data..."
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+                </StackLayout>
+            </Grid>
+        </CollectionView.EmptyView>
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <StackLayout>
+                    <VisualStateManager.VisualStateGroups>
+                        <VisualStateGroup Name="CommonStates">
+                            <VisualState Name="Normal" />
+                            <VisualState Name="Selected">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor"
+                                            Value="#CAC8AF" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateManager.VisualStateGroups>
+                    <Frame BackgroundColor="#BD0D0D"
+                           Margin="10"
+                           CornerRadius="20">
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="{x:Binding image_url}" />
+                            <Label Text="{x:Binding name}"
+                                   Margin="5"
+                                   FontAttributes="Bold"
+                                   TextColor="GhostWhite" />
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</ContentPage>

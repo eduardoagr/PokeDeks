@@ -1,14 +1,13 @@
-﻿using System;
+﻿using PokeDex.View;
 
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace PokeDex {
     public partial class App : Application {
         public App() {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new PokeCollectionPage());
         }
 
         protected override void OnStart() {

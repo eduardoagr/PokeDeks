@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\egome\\source\\repos\\PokeDex\\PokeDex\\PokeDex\\PokeDex.csproj": {}
+    "C:\\Users\\egome\\Documents\\GitRepos\\PokeDex\\PokeDex\\PokeDex\\PokeDex.csproj": {}
   },
   "projects": {
-    "C:\\Users\\egome\\source\\repos\\PokeDex\\PokeDex\\PokeDex\\PokeDex.csproj": {
+    "C:\\Users\\egome\\Documents\\GitRepos\\PokeDex\\PokeDex\\PokeDex\\PokeDex.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\egome\\source\\repos\\PokeDex\\PokeDex\\PokeDex\\PokeDex.csproj",
+        "projectUniqueName": "C:\\Users\\egome\\Documents\\GitRepos\\PokeDex\\PokeDex\\PokeDex\\PokeDex.csproj",
         "projectName": "PokeDex",
-        "projectPath": "C:\\Users\\egome\\source\\repos\\PokeDex\\PokeDex\\PokeDex\\PokeDex.csproj",
+        "projectPath": "C:\\Users\\egome\\Documents\\GitRepos\\PokeDex\\PokeDex\\PokeDex\\PokeDex.csproj",
         "packagesPath": "C:\\Users\\egome\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\egome\\source\\repos\\PokeDex\\PokeDex\\PokeDex\\obj\\",
+        "outputPath": "C:\\Users\\egome\\Documents\\GitRepos\\PokeDex\\PokeDex\\PokeDex\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -54,11 +54,19 @@
               "target": "Package",
               "version": "[12.0.3, )"
             },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.6.0, )"
             },
             "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.8.0.1821, )"
+            },
+            "Xamarin.Forms.Visual.Material": {
               "target": "Package",
               "version": "[4.8.0.1821, )"
             }
