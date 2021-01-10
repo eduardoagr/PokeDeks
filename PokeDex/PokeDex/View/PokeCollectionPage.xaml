@@ -10,7 +10,7 @@
 
     <CollectionView ItemsSource="{x:Binding pokeItems}"
                     SelectionMode="Single"
-                    SelectedItem="{x:Binding SelectedItem, Mode=TwoWay}"
+                    SelectedItem="{x:Binding SelectedItem}"
                     SelectionChangedCommand="{x:Binding SelectedItemCommand}">
         <CollectionView.EmptyView>
             <Grid>

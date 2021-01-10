@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\PokeDex",
+    "\\PokeDex\\PokeDex",
+    "\\PokeDex\\PokeDex\\View",
+    "\\PokeDex\\PokeDex\\ViewModel"
   ],
+  "SelectedNode": "\\PokeDex\\PokeDex\\ViewModel\\PokeCollectionVM.cs",
   "PreviewInSolutionExplorer": false
 }
